@@ -16,7 +16,7 @@ fun TaskListScreen() {
         Task(id = 2, title = "Hacer tarea de Moviles Android"),
         Task(id = 3, title = "Estudiar Diseño Responsivo")
     )
-
+    
     LazyColumn(
         modifier = Modifier
             .fillMaxSize()
