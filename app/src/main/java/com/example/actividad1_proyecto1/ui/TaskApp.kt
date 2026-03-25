@@ -11,10 +11,11 @@ import androidx.compose.ui.Modifier
 import com.example.actividad1_proyecto1.ui.components.BottomNavigationBar
 import com.example.actividad1_proyecto1.ui.components.DrawerContent
 import kotlinx.coroutines.launch
+import com.example.actividad1_proyecto1.data.TaskViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TaskApp() {
+fun TaskApp(viewModel: TaskViewModel) {
     val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
     val scope = rememberCoroutineScope()
 
