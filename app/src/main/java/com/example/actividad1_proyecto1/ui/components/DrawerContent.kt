@@ -1,4 +1,4 @@
-package com.example.actividad1_proyecto1.ui.components
+package com.ues.listadetareas.ui.components
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
@@ -11,15 +11,12 @@ fun DrawerContent() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .padding(all = 16.dp)
+            .padding(16.dp)
     ) {
-        Text(text = "Menú", style = MaterialTheme.typography.titleLarge)
-
-        Spacer(modifier = Modifier.height(height = 20.dp))
-
-        Text(text = "Lista de Tareas", style = MaterialTheme.typography.bodyLarge)
-        Spacer(modifier = Modifier.height(height = 10.dp))
-
-        Text(text = "Acerca de", style = MaterialTheme.typography.bodyLarge)
+        Text("Menú", style = MaterialTheme.typography.titleLarge)
+        Spacer(modifier = Modifier.height(20.dp))
+        Text("Lista de Tareas", style = MaterialTheme.typography.bodyLarge)
+        Spacer(modifier = Modifier.height(10.dp))
+        Text("Acerca de", style = MaterialTheme.typography.bodyLarge)
     }
 }
